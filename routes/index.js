@@ -21,8 +21,9 @@ router.get('/country/:country', function(req, res, next) {
 
 /* GET country  listing. */
 router.get('/', function(req, res, next) {
-  let curl = "https://corona.lmao.ninja/v2/countries/India,Nepal,Bangladesh,Pakistan,Bhutan,SriLanka,maldives?yesterday";
+  let curl = "https://corona.lmao.ninja/v2/countries/India,Nepal,Bangladesh,Pakistan,Bhutan,Sri Lanka,maldives?yesterday";
   fetch(curl, settings).then(res => res.json()).then((data) => {
+    console.log(data);
     res.render('countrywise', { world_data:data});
   });
 });

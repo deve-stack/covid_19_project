@@ -1,7 +1,11 @@
 {% block body %}
 <center>
 <br><br>
-<h2>Country wise data</h2><br>
+<h2>Corona Cases In Indian Subcontinent</h2><br>
+
+  {% for item in world_data %}
+  {{item.country}},
+  {% endfor %}
 
 
 <script src="https://cdn.anychart.com/releases/8.9.0/js/anychart-core.min.js"></script>
@@ -36,8 +40,8 @@ anychart.data.loadJsonFile('https://raw.githubusercontent.com/deve-stack/covid_1
     // set the ascending sort order
     chart.sort('asc');
 
-    // set the chart title
-    chart.title("COVID-19 Cases Across the World");
+ 
+   
   
     // set the chart container element id
     chart.container('container');
