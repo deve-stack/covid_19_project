@@ -8,21 +8,13 @@
   {% endfor %}
 
 
+
 <script src="https://cdn.anychart.com/releases/8.9.0/js/anychart-core.min.js"></script>
 <script src="https://cdn.anychart.com/releases/8.9.0/js/anychart-sunburst.min.js"></script>
 <script src="https://cdn.anychart.com/releases/8.9.0/js/anychart-data-adapter.min.js"></script>
  
 <div id="container"></div>
-
-
-
-
 <script>
-
-
-
-
-
 anychart.onDocumentReady(function () {
 {# https://gist.githubusercontent.com/shacheeswadia/3955e21fff7eddcc3862ec4797109cda/raw/209c22d8c607cf76b16ec18c7fd95c02e5fdbbe3/sunburstData.json #}
   {# https://raw.githubusercontent.com/deve-stack/covid_19_project/master/views/api.json #}
@@ -54,11 +46,49 @@ anychart.data.loadJsonFile('https://raw.githubusercontent.com/deve-stack/covid_1
 
 </script>    
 
+<style>
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
 
-  <div class="container table-responsive">
-    <table class="table" id="country-table">
-      <thead class="table-dark">
-        <tr>
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+
+</style>
+
+
+<table class="styled-table">
+    <thead>
+       <tr>
           <th>s.no</th>
           <th>Country</th>
           <th>Total Cases</th>
@@ -67,9 +97,9 @@ anychart.data.loadJsonFile('https://raw.githubusercontent.com/deve-stack/covid_1
           <th>Deaths</th>
          
         </tr>
-      </thead>
-      <tbody>
-      {% set ind = 0 %}
+    </thead>
+    <tbody>
+       {% set ind = 0 %}
       {% for item in world_data %}
       {% if ind > 0 %}
         <tr>
@@ -84,8 +114,12 @@ anychart.data.loadJsonFile('https://raw.githubusercontent.com/deve-stack/covid_1
       {% endif %}
       {% set ind=ind+1 %}
       {% endfor %}
-      </tbody>
-    </table>
+        
+    </tbody>
+</table>
+
+
+
     <script>
       $(document).ready(function() {
         $('#country-table').DataTable();
