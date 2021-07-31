@@ -39,15 +39,15 @@
                     },
                     {
                         "name": "Deaths",
-                        "value": "423842"
+                        "value": "9857"
                     },
                     {
                         "name": "Recovered",
-                        "value": "423842"
+                        "value": "654177"
                     },
                     {
                         "name": "Active Cases",
-                        "value": "423842"
+                        "value": "31355"
                     }
                 ]
             },
@@ -58,20 +58,20 @@
                 "children": [
                     {
                         "name": "Total Cases",
-                        "value": "695389"
+                        "value": "2515"
                       
                     },
                     {
                         "name": "Deaths",
-                        "value": "423842"
+                        "value": "2"
                     },
                     {
                         "name": "Recovered",
-                        "value": "423842"
+                        "value": "2374"
                     },
                     {
                         "name": "Active Cases",
-                        "value": "423842"
+                        "value": "139"
                     }
                 ]
             },
@@ -82,20 +82,20 @@
                 "children": [
                     {
                         "name": "Total Cases",
-                        "value": "695389"
+                        "value": "308812"
                       
                     },
                     {
                         "name": "Deaths",
-                        "value": "423842"
+                        "value": "4436"
                     },
                     {
                         "name": "Recovered",
-                        "value": "423842"
+                        "value": "277118"
                     },
                     {
                         "name": "Active Cases",
-                        "value": "423842"
+                        "value": "27258"
                     }
                 ]
             },
@@ -106,20 +106,20 @@
                 "children": [
                     {
                         "name": "Total Cases",
-                        "value": "695389"
+                        "value": "77309"
                       
                     },
                     {
                         "name": "Deaths",
-                        "value": "423842"
+                        "value": "221"
                     },
                     {
                         "name": "Recovered",
-                        "value": "423842"
+                        "value": "74481"
                     },
                     {
                         "name": "Active Cases",
-                        "value": "423842"
+                        "value": "2607"
                     }
                 ]
             },
@@ -130,20 +130,44 @@
                 "children": [
                     {
                         "name": "Total Cases",
-                        "value": "695389"
+                        "value": "1249484"
                       
                     },
                     {
                         "name": "Deaths",
-                        "value": "423842"
+                        "value": "20685"
                     },
                     {
                         "name": "Recovered",
-                        "value": "423842"
+                        "value": "1078212"
                     },
                     {
                         "name": "Active Cases",
-                        "value": "423842"
+                        "value": "150587"
+                    }
+                ]
+            },
+            {
+                "name": "Pakistan",
+                "id": "Pakistan",
+                
+                "children": [
+                    {
+                        "name": "Total Cases",
+                        "value": "1029811"
+                      
+                    },
+                    {
+                        "name": "Deaths",
+                        "value": "23360"
+                    },
+                    {
+                        "name": "Recovered",
+                        "value": "940164"
+                    },
+                    {
+                        "name": "Active Cases",
+                        "value": "66287"
                     }
                 ]
             }

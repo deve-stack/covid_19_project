@@ -1,7 +1,56 @@
 {% block body %}
 <center>
 <br><br>
-  <h2>Country wise data</h2><br>
+<h2>Country wise data</h2><br>
+
+
+<script src="https://cdn.anychart.com/releases/8.9.0/js/anychart-core.min.js"></script>
+<script src="https://cdn.anychart.com/releases/8.9.0/js/anychart-sunburst.min.js"></script>
+<script src="https://cdn.anychart.com/releases/8.9.0/js/anychart-data-adapter.min.js"></script>
+ 
+<div id="container"></div>
+
+
+
+
+<script>
+
+
+
+
+
+anychart.onDocumentReady(function () {
+{# https://gist.githubusercontent.com/shacheeswadia/3955e21fff7eddcc3862ec4797109cda/raw/209c22d8c607cf76b16ec18c7fd95c02e5fdbbe3/sunburstData.json #}
+  {# https://raw.githubusercontent.com/deve-stack/covid_19_project/master/views/api.json #}
+anychart.data.loadJsonFile('https://raw.githubusercontent.com/deve-stack/covid_19_project/master/views/api.json',
+  function (data) {
+    // create a data tree from the dataset
+    var dataTree = anychart.data.tree(data);
+    
+    // create a sunburst chart
+    var chart = anychart.sunburst(dataTree);
+
+    // set the calculation mode
+    chart.calculationMode('parent-independent');
+
+    // set the ascending sort order
+    chart.sort('asc');
+
+    // set the chart title
+    chart.title("COVID-19 Cases Across the World");
+  
+    // set the chart container element id
+    chart.container('container');
+
+    // initiate chart drawing
+    chart.draw();
+  
+  });
+});
+
+</script>    
+
+
   <div class="container table-responsive">
     <table class="table" id="country-table">
       <thead class="table-dark">
@@ -38,6 +87,7 @@
         $('#country-table').DataTable();
       });
     </script>
+
   </div>
 </center>
 {% endblock %}
