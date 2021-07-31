@@ -6,16 +6,144 @@
             {
                 "name": "India",
                 "id": "India",
-                "total_deaths": "280486",
+                
                 "children": [
                     {
-                        "name": "Active Cases",
-                        "value": "45017"
+                        "name": "Total Cases",
+                        "value": "31613993"
                       
                     },
                     {
                         "name": "Deaths",
-                        "value": "1712"
+                        "value": "423842"
+                    },
+                    {
+                        "name": "Recovered",
+                        "value": "30781263"
+                    },
+                    {
+                        "name": "Active Cases",
+                        "value": "408888"
+                    }
+                ]
+            },
+            {
+                "name": "Nepal",
+                "id": "Nepal",
+                
+                "children": [
+                    {
+                        "name": "Total Cases",
+                        "value": "695389"
+                      
+                    },
+                    {
+                        "name": "Deaths",
+                        "value": "423842"
+                    },
+                    {
+                        "name": "Recovered",
+                        "value": "423842"
+                    },
+                    {
+                        "name": "Active Cases",
+                        "value": "423842"
+                    }
+                ]
+            },
+            {
+                "name": "Bhutan",
+                "id": "Bhutan",
+                
+                "children": [
+                    {
+                        "name": "Total Cases",
+                        "value": "695389"
+                      
+                    },
+                    {
+                        "name": "Deaths",
+                        "value": "423842"
+                    },
+                    {
+                        "name": "Recovered",
+                        "value": "423842"
+                    },
+                    {
+                        "name": "Active Cases",
+                        "value": "423842"
+                    }
+                ]
+            },
+            {
+                "name": "SriLanka",
+                "id": "SriLanka",
+                
+                "children": [
+                    {
+                        "name": "Total Cases",
+                        "value": "695389"
+                      
+                    },
+                    {
+                        "name": "Deaths",
+                        "value": "423842"
+                    },
+                    {
+                        "name": "Recovered",
+                        "value": "423842"
+                    },
+                    {
+                        "name": "Active Cases",
+                        "value": "423842"
+                    }
+                ]
+            },
+            {
+                "name": "Maldives",
+                "id": "Maldives",
+                
+                "children": [
+                    {
+                        "name": "Total Cases",
+                        "value": "695389"
+                      
+                    },
+                    {
+                        "name": "Deaths",
+                        "value": "423842"
+                    },
+                    {
+                        "name": "Recovered",
+                        "value": "423842"
+                    },
+                    {
+                        "name": "Active Cases",
+                        "value": "423842"
+                    }
+                ]
+            },
+            {
+                "name": "BanglaDesh",
+                "id": "BanglaDesh",
+                
+                "children": [
+                    {
+                        "name": "Total Cases",
+                        "value": "695389"
+                      
+                    },
+                    {
+                        "name": "Deaths",
+                        "value": "423842"
+                    },
+                    {
+                        "name": "Recovered",
+                        "value": "423842"
+                    },
+                    {
+                        "name": "Active Cases",
+                        "value": "423842"
                     }
                 ]
             }
